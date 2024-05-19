@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Racing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="road"></div>
+        <img id="car" src="https://i.postimg.cc/XNCqf4DR/Pngtree-top-view-white-airplane-with-8893925.png">
+        <img class="competitor" src="https://i.postimg.cc/XNCqf4DR/Pngtree-top-view-white-airplane-with-8893925.png" style="top: -200px; left: 20%;">
+        <img class="competitor" src="https://i.postimg.cc/XNCqf4DR/Pngtree-top-view-white-airplane-with-8893925.png" style="top: -400px; left: 70%;">
+        <img id="obstacle" src="https://i.postimg.cc/Njg0vTft/pngwing-com-3.png">
+        <div id="score">Score: <span id="score-value">0</span></div>
+        <div id="life">Life: <span id="life-value">3</span></div>
+        <button id="start-button">Start Game</button>
+    </div>
+    <div id="restart-button">Restart Game</div>
+    <div id="controls">
+        <button id="left-button" class="control-button">←</button>
+        <button id="right-button" class="control-button">→</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
