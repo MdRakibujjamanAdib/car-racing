@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#game-container {
+  position: relative;
+  width: 400px;
+  height: 600px;
+  border: 2px solid #000;
+  background-color: #ccc;
+  margin: 0 auto;
+  background-image: url('https://i.postimg.cc/3Jjwq9h9/pexels-alexazabache-4007310.jpg');
+  background-size: cover;
+}
+
+#road {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url('https://i.postimg.cc/3Jjwq9h9/pexels-alexazabache-4007310.jpg');
+  background-size: cover;
+  z-index: -1;
+}
+
+#car {
+  position: absolute;
+  width: 80px;
+  height: auto;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.competitor {
+  position: absolute;
+  width: 40px;
+  height: auto;
+  bottom: -200px;
+}
+
+#obstacle {
+  position: absolute;
+  width: 40px;
+  height: auto;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#score {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+#life {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  color: white;
+  font-size: 20px;
+}
+
+#start-button {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#restart-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#controls {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.control-button {
+  width: 60px;
+  height: 60px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 24px;
+  border: none;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
